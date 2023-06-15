@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@layer components {
+  .card {
+    @apply flex items-center py-4 flex-col rounded-sm basis-72 flex-1 dark:bg-DarkDesaturatedBlueCardBG border-t-[4px] border-t-Facebook dark:hover:bg-DarkDesaturatedBlueCardBG/70 cursor-pointer dark:text-White hover:bg-DesaturatedBlueText/30;
+  }
+
+  .followers-info {
+    @apply flex flex-col text-center mt-4 text-sm text-DesaturatedBlueText;
+  }
+
+  .social__header__number {
+    @apply dark:text-White text-[#000];
+  }
+
+  .social__info {
+    @apply flex gap-2 text-DesaturatedBlueText text-sm;
+  }
+
+  .social__upInfo {
+    @apply flex items-center gap-2 mt-4 text-LimeGreen font-bold text-sm;
+  }
+
+  .row {
+    @apply items-center flex-row justify-between p-8 border-none;
+  }
+
+  .left__content {
+    @apply flex flex-col items-start;
+  }
+  .right__content {
+    @apply flex flex-col items-center;
+  }
+
+  .border-bottom {
+    @apply border-b-2 border-darkGrayishBlue w-full pb-2 md:border-none md:w-fit md:pb-0;
+  }
+}

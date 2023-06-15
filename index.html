@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="bg-white dark:bg-VeryDarkBlueBG text-White px-8 md:px-0">
+    <!-- header -->
+    <header
+      class="flex flex-col md:flex-row justify-between container mx-auto py-8 items-start md:items-center"
+    >
+      <div class="border-bottom">
+        <h1 class="text-2xl font-bold text-[#000] dark:text-White">
+          Social Media Dasboard
+        </h1>
+        <span class="text-DesaturatedBlueText font-[500] mt-2 block"
+          >Total Followers: 23,004</span
+        >
+      </div>
+
+      <!-- toggle button -->
+      <div
+        class="flex gap-4 items-center mt-4 md:mt-0 justify-between md:justify-normal w-full md:w-fit"
+      >
+        <span class="dark-text text-DesaturatedBlueText font-bold"
+          >Dark Mode</span
+        >
+        <span class="light-text hidden text-DesaturatedBlueText font-bold"
+          >Light Mode</span
+        >
+        <div
+          id="toggle"
+          class="w-16 h-8 rounded-full bg-Toggle flex items-center relative cursor-pointer"
+        >
+          <span
+            id="toggle-round"
+            class="h-7 w-7 rounded-full bg-VeryDarkBlueTop absolute outline-none left-0"
+          ></span>
+        </div>
+      </div>
+      <!-- toggle button -->
+    </header>
+    <!-- header end -->
+
+    <!-- cards -->
+    <section class="flex container flex-wrap mx-auto gap-4">
+      <!-- card 1  -->
+      <div class="card">
+        <span class="social__info"
+          ><img src="images/icon-facebook.svg" /> <span>@nathanf</span>
+        </span>
+        <div class="followers-info">
+          <span class="text-4xl social__header__number">1987</span
+          ><span class="tracking-widest">FOLLOWERS</span>
+        </div>
+        <div>
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 12 Today</span
+          >
+        </div>
+      </div>
+      <!-- card 1  -->
+      <!-- card 2  -->
+      <div class="card">
+        <span class="social__info"
+          ><img src="images/icon-twitter.svg" /> <span>@nathanf</span>
+        </span>
+        <div class="followers-info">
+          <span class="text-4xl social__header__number">1044</span
+          ><span class="tracking-widest">FOLLOWERS</span>
+        </div>
+        <div>
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 99 Today</span
+          >
+        </div>
+      </div>
+      <!-- card 2 -->
+      <!-- card 3  -->
+      <div class="card border-[#ed7f81]">
+        <span class="social__info"
+          ><img src="images/icon-instagram.svg" /> <span>@realnathanf</span>
+        </span>
+        <div class="followers-info">
+          <span class="text-4xl social__header__number">11K</span
+          ><span class="tracking-widest">FOLLOWERS</span>
+        </div>
+        <div>
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 1199 Today</span
+          >
+        </div>
+      </div>
+      <!-- card 3 -->
+      <!-- card 4-->
+      <div class="card border-YouTube">
+        <span class="social__info"
+          ><img src="images/icon-youtube.svg" /> <span>Nathan F.</span>
+        </span>
+        <div class="followers-info">
+          <span class="text-4xl social__header__number">1987</span
+          ><span class="tracking-widest">FOLLOWERS</span>
+        </div>
+        <div>
+          <span class="social__upInfo text-YouTube"
+            ><img src="images/icon-down.svg" /> 144 Today</span
+          >
+        </div>
+      </div>
+      <!-- card 4-->
+    </section>
+
+    <!-- overview -->
+    <h1
+      class="container mx-auto mt-12 mb-6 font-bold text-2xl text-darkGrayishBlue dark:text-White"
+    >
+      Overview - Today
+    </h1>
+    <section class="flex container mx-auto flex-wrap gap-8 mb-12">
+      <!-- card 1 -->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Page Views</span>
+          <span class="text-4xl mt-2 font-bold social__header__number">87</span>
+        </div>
+        <div class="right__content">
+          <img src="images/icon-facebook.svg" />
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 3%</span
+          >
+        </div>
+      </div>
+      <!-- card 1 end-->
+      <!-- card 2 -->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Likes</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >117</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-facebook.svg" />
+          <span class="social__upInfo text-YouTube"
+            ><img src="images/icon-down.svg" /> 3%</span
+          >
+        </div>
+      </div>
+      <!-- card 2 end-->
+      <!-- card 3 -->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Likes</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >5462</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-instagram.svg" />
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 2257%</span
+          >
+        </div>
+      </div>
+      <!-- card 3end-->
+      <!-- card 4-->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Profile Views</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >52K</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-instagram.svg" />
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 1375%</span
+          >
+        </div>
+      </div>
+      <!-- card 4 end-->
+      <!-- card 5 -->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Retweets</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >117</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-twitter.svg" />
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 303%</span
+          >
+        </div>
+      </div>
+      <!-- card 5end-->
+      <!-- card 6-->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Likes</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >507</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-twitter.svg" />
+          <span class="social__upInfo"
+            ><img src="images/icon-up.svg" /> 553%</span
+          >
+        </div>
+      </div>
+      <!-- card 6 end-->
+      <!-- card 7-->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Likes</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >107</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-facebook.svg" />
+          <span class="social__upInfo text-YouTube"
+            ><img src="images/icon-down.svg" /> 19%</span
+          >
+        </div>
+      </div>
+      <!-- card 7end-->
+      <!-- card 8-->
+      <div class="card row">
+        <div class="left__content">
+          <span class="text-DesaturatedBlueText font-bold">Total Views</span>
+          <span class="text-4xl mt-2 font-bold social__header__number"
+            >1407</span
+          >
+        </div>
+        <div class="right__content">
+          <img src="images/icon-facebook.svg" />
+          <span class="social__upInfo text-YouTube"
+            ><img src="images/icon-down.svg" /> 12%</span
+          >
+        </div>
+      </div>
+      <!-- card 8 end-->
+    </section>
+    <!-- overview -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
